@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Batalla de Talentos SENA 2026 - Evento cultural e institucional del SENA" />
+  <title>Batalla de Talentos SENA 2026</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Hoja de estilos -->
+  
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==============================
+       NAVEGACIÓN
+  ================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <i class="fas fa-star"></i>
+        <span>Batalla de Talentos</span>
+      </a>
+
+      <!-- Botón hamburguesa para móvil -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#sobre" class="nav-link">El Evento</a></li>
+        <li><a href="#categorias" class="nav-link">Categorías</a></li>
+        <li><a href="#galeria" class="nav-link">Galería</a></li>
+        <li><a href="#videos" class="nav-link">Videos</a></li>
+        <li><a href="#aprendizajes" class="nav-link">Aprendizajes</a></li>
+        <li><a href="#conclusion" class="nav-link">Conclusión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==============================
+       HERO / INICIO
+  ================================ -->
+  <section class="hero" id="inicio">
+    <!-- Canvas para las estrellas/reflectores -->
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">SENA · Centro de Manufactura en Textil y Cuero · 2026</span>
+      <h1 class="hero-title">
+        Batalla de<br />
+        <em>Talentos</em><br />
+        SENA 2026
+      </h1>
+      <p class="hero-subtitle">
+        Donde el arte, la música y la creatividad de los aprendices SENA
+        toman el escenario para brillar.
+      </p>
+      <a href="#sobre" class="btn-primary">
+        <span>Explorar Evento</span>
+        <i class="fas fa-arrow-down"></i>
+      </a>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Desplázate</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ==============================
+       SOBRE EL EVENTO
+  ================================ -->
+  <section class="section sobre" id="sobre">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">El Evento</span>
+        <h2 class="section-title">¿Qué es la Batalla de Talentos?</h2>
+        <p class="section-desc">
+          Un espacio institucional donde los aprendices SENA demuestran sus habilidades
+          artísticas y culturales, fomentando el desarrollo integral y la creatividad.
+        </p>
+      </div>
+
+      <div class="cards-grid sobre-grid">
+        <!-- Tarjeta 1 -->
+        <div class="info-card reveal">
+          <div class="info-card-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Objetivo del Evento</h3>
+          <p>
+            Fomentar la expresión artística y cultural entre los aprendices, reconociendo
+            el talento y promoviendo la participación activa en actividades que enriquecen
+            la formación integral.
+          </p>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="info-card reveal">
+          <div class="info-card-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Participación</h3>
+          <p>
+            Aprendices de distintas fichas y programas del SENA se unieron para
+            competir en diversas categorías artísticas, demostrando que la formación
+            técnica y el arte van de la mano.
+          </p>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="info-card reveal">
+          <div class="info-card-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Cultura y Arte</h3>
+          <p>
+            El evento visibiliza el valor del arte como herramienta de desarrollo personal,
+            creando un puente entre la formación profesional y las expresiones culturales
+            de nuestra comunidad.
+          </p>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="info-card reveal">
+          <div class="info-card-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3>Reconocimiento</h3>
+          <p>
+            Los ganadores de cada categoría reciben reconocimientos especiales que
+            valoran su esfuerzo, dedicación y el talento que aportan a la comunidad
+            SENA.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CATEGORÍAS
+  ================================ -->
+  <section class="section categorias-intro" id="categorias">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Competencias</span>
+        <h2 class="section-title">Categorías del Evento</h2>
+        <p class="section-desc">
+          Seis disciplinas artísticas que pusieron a prueba la creatividad,
+          la técnica y la pasión de cada participante.
+        </p>
+      </div>
+
+      <!-- Íconos de categorías -->
+      <div class="cat-icons-row reveal">
+        <a href="#baile" class="cat-pill">
+          <i class="fas fa-person-dancing"></i>
+          <span>Baile</span>
+        </a>
+        <a href="#canto" class="cat-pill">
+          <i class="fas fa-microphone-alt"></i>
+          <span>Canto</span>
+        </a>
+        <a href="#dibujo" class="cat-pill">
+          <i class="fas fa-pencil-ruler"></i>
+          <span>Dibujo</span>
+        </a>
+        <a href="#instrumentos" class="cat-pill">
+          <i class="fas fa-guitar"></i>
+          <span>Instrumentistas</span>
+        </a>
+        <a href="#cuentos" class="cat-pill">
+          <i class="fas fa-book-open"></i>
+          <span>Cuentos</span>
+        </a>
+        <a href="#premiacion" class="cat-pill">
+          <i class="fas fa-award"></i>
+          <span>Premiación</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── BAILE ─── -->
+  <section class="section categoria-seccion" id="baile">
+    <div class="container">
+      <div class="categoria-header reveal">
+        <div class="categoria-num">01</div>
+        <div>
+          <span class="section-tag">Categoría</span>
+          <h2 class="section-title">Baile</h2>
+          <p class="section-desc">
+            Los aprendices demostraron ritmo, coordinación y expresión corporal
+            en esta emocionante competencia de danza. Géneros como salsa, urbano
+            y folclor colombiano iluminaron el escenario con energía y color.
+          </p>
+        </div>
+      </div>
+
+      <div class="foto-grid foto-grid-4 reveal">
+        <div class="foto-card">
+          <img src="imagen__1.jpeg" alt="Fotografía de baile 1" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="foto-card">
+          <img src="imagen_2.jpeg" alt="Fotografía de baile 2" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="foto-card">
+          <img src="imagen_3.jpeg" alt="Fotografía de baile 3" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="foto-card">
+          <img src="imagen_4.jpeg" alt="Fotografía de baile 4" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CANTO ─── -->
+  <section class="section categoria-seccion cat-alt" id="canto">
+    <div class="container">
+      <div class="categoria-header reveal">
+        <div class="categoria-num">02</div>
+        <div>
+          <span class="section-tag">Categoría</span>
+          <h2 class="section-title">Canto</h2>
+          <p class="section-desc">
+            Voces que emocionaron al público y al jurado. Los cantantes interpretaron
+            géneros variados —pop, balada y música colombiana— demostrando técnica
+            vocal y una conexión especial con su audiencia.
+          </p>
+        </div>
+      </div>
+
+      <div class="foto-grid foto-grid-3 reveal">
+        <div class="foto-card">
+          <img src="canto_1.jpeg" alt="Fotografía de canto 1" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="foto-card">
+          <img src="canto_2.jpeg" alt="Fotografía de canto 2" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="foto-card">
+          <img src="canto_3.jpeg" alt="Fotografía de canto 3" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DIBUJO ─── -->
+  <section class="section categoria-seccion" id="dibujo">
+    <div class="container">
+      <div class="categoria-header reveal">
+        <div class="categoria-num">03</div>
+        <div>
+          <span class="section-tag">Categoría</span>
+          <h2 class="section-title">Dibujo</h2>
+          <p class="section-desc">
+            El lápiz como herramienta de expresión. Los participantes crearon obras
+            originales en diferentes técnicas —grafito, color, ilustración digital—
+            evidenciando su talento plástico y su visión artística única.
+          </p>
+        </div>
+      </div>
+
+      <div class="foto-grid foto-grid-3 reveal">
+        <div class="foto-card">
+          <img src="dibujo_1.jpeg" alt="Fotografía de dibujo 1" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="foto-card">
+          <img src="dibujo_2.jpeg" alt="Fotografía de dibujo 2" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="foto-card">
+          <img src="dibujo_3.jpeg" alt="Fotografía de dibujo 3" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── INSTRUMENTISTAS ─── -->
+  <section class="section categoria-seccion cat-alt" id="instrumentos">
+    <div class="container">
+      <div class="categoria-header reveal">
+        <div class="categoria-num">04</div>
+        <div>
+          <span class="section-tag">Categoría</span>
+          <h2 class="section-title">Instrumentistas</h2>
+          <p class="section-desc">
+            Guitarra, piano,. Los instrumentistas llevaron al público
+            a un viaje musical, demostrando que la dedicación y el estudio producen
+            interpretaciones que tocan el alma.
+          </p>
+        </div>
+      </div>
+
+      <div class="foto-grid foto-grid-3 reveal">
+        <div class="foto-card">
+          <img src="instrumento_1.jpeg" alt="Fotografía de instrumentistas 1" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="foto-card">
+          <img src="instrumento_2.jpeg" alt="Fotografía de instrumentistas 2" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CUENTOS ─── -->
+  <section class="section categoria-seccion" id="cuentos">
+    <div class="container">
+      <div class="categoria-header reveal">
+        <div class="categoria-num">05</div>
+        <div>
+          <span class="section-tag">Categoría</span>
+          <h2 class="section-title">Cuentos</h2>
+          <p class="section-desc">
+            La palabra como arte. Los narradores cautivaron con historias originales
+            que combinaron imaginación, oralidad y una puesta en escena que hizo
+            vibrar a cada espectador.
+          </p>
+        </div>
+      </div>
+
+      <div class="foto-grid foto-grid-2 reveal">
+        <div class="foto-card">
+          <img src="cuento_1.jpeg" alt="Fotografía de cuentos 1" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="foto-card">
+          <img src="cuento_2.jpeg" alt="Fotografía de cuentos 2" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PREMIACIÓN ─── -->
+  <section class="section categoria-seccion cat-premiacion" id="premiacion">
+    <div class="container">
+      <div class="categoria-header reveal">
+        <div class="categoria-num">06</div>
+        <div>
+          <span class="section-tag">Ceremonia Final</span>
+          <h2 class="section-title">Premiación</h2>
+          <p class="section-desc">
+            El broche de oro del evento. Los ganadores de cada categoría recibieron
+            sus reconocimientos en una emotiva ceremonia que celebró el esfuerzo,
+            la dedicación y el talento de todos los participantes.
+          </p>
+        </div>
+      </div>
+
+      <div class="foto-grid foto-grid-2 reveal">
+        <div class="foto-card">
+          <img src="premiacion_1.jpeg" alt="Fotografía de premiación 1" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="foto-card">
+          <img src="premiacion_2.jpeg" alt="Fotografía de premiación 2" loading="lazy" />
+          <div class="foto-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       GALERÍA GENERAL — MOMENTOS DESTACADOS
+  ================================ -->
+  <section class="section galeria-general" id="galeria">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Galería</span>
+        <h2 class="section-title">Momentos Destacados</h2>
+        <p class="section-desc">
+          Las 17 fotografías que capturan la energía, emoción y talento
+          de la Batalla de Talentos SENA 2026.
+        </p>
+      </div>
+
+      <div class="galeria-grid reveal">
+        <!-- Baile: 4 fotos -->
+        <div class="galeria-item" data-cat="Baile">
+          <img src="imagen__1.jpeg" alt="Baile 01" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-person-dancing"></i> Baile</span>
+          </div>
+        </div>
+        <div class="galeria-item" data-cat="Baile">
+          <img src="imagen_2.jpeg" alt="Baile 02" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-person-dancing"></i> Baile</span>
+          </div>
+        </div>
+        <div class="galeria-item" data-cat="Baile">
+          <img src="imagen_3.jpeg" alt="Baile 03" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-person-dancing"></i> Baile</span>
+          </div>
+        </div>
+        <div class="galeria-item" data-cat="Baile">
+          <img src="imagen_4.jpeg" alt="Baile 04" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-person-dancing"></i> Baile</span>
+          </div>
+        </div>
+
+        <!-- Canto: 3 fotos -->
+        <div class="galeria-item" data-cat="Canto">
+          <img src="canto_1.jpeg" alt="Canto 01" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-microphone-alt"></i> Canto</span>
+          </div>
+        </div>
+        <div class="galeria-item" data-cat="Canto">
+          <img src="canto_2.jpeg" alt="Canto 02" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-microphone-alt"></i> Canto</span>
+          </div>
+        </div>
+        <div class="galeria-item" data-cat="Canto">
+          <img src="canto_3.jpeg" alt="Canto 03" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-microphone-alt"></i> Canto</span>
+          </div>
+        </div>
+
+        <!-- Dibujo: 3 fotos -->
+        <div class="galeria-item" data-cat="Dibujo">
+          <img src="dibujo_1.jpeg" alt="Dibujo 01" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-pencil-ruler"></i> Dibujo</span>
+          </div>
+        </div>
+        <div class="galeria-item" data-cat="Dibujo">
+          <img src="dibujo_2.jpeg" alt="Dibujo 02" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-pencil-ruler"></i> Dibujo</span>
+          </div>
+        </div>
+        <div class="galeria-item" data-cat="Dibujo">
+          <img src="dibujo_3.jpeg" alt="Dibujo 03" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-pencil-ruler"></i> Dibujo</span>
+          </div>
+        </div>
+
+        <!-- Instrumentistas: 3 fotos -->
+        <div class="galeria-item" data-cat="Instrumentistas">
+          <img src="instrumento_1.jpeg" alt="Instrumentistas 01" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-guitar"></i> Instrumentistas</span>
+          </div>
+        </div>
+        <div class="galeria-item" data-cat="Instrumentistas">
+          <img src="instrumento_2.jpeg" alt="Instrumentistas 02" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-guitar"></i> Instrumentistas</span>
+          </div>
+        </div>
+       
+        <!-- Cuentos: 2 fotos -->
+        <div class="galeria-item" data-cat="Cuentos">
+          <img src="cuento_1.jpeg" alt="Cuentos 01" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-book-open"></i> Cuentos</span>
+          </div>
+        </div>
+        <div class="galeria-item" data-cat="Cuentos">
+          <img src="cuento_2.jpeg" alt="Cuentos 02" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-book-open"></i> Cuentos</span>
+          </div>
+        </div>
+
+        <!-- Premiación: 2 fotos -->
+        <div class="galeria-item" data-cat="Premiación">
+          <img src="premiacion_1.jpeg" alt="Premiación 01" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-award"></i> Premiación</span>
+          </div>
+        </div>
+        <div class="galeria-item" data-cat="Premiación">
+          <img src="premiacion_2.jpeg" alt="Premiación 02" loading="lazy" />
+          <div class="galeria-overlay">
+            <span class="galeria-cat"><i class="fas fa-award"></i> Premiación</span>
+          </div>
+        </div>
+      </div><!-- /galeria-grid -->
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">
+      <i class="fas fa-times"></i>
+    </button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="Imagen ampliada" id="lightboxImg" />
+    </div>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Siguiente">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- ==============================
+       GALERÍA DE VIDEOS
+  ================================ -->
+  <section class="section videos" id="videos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Multimedia</span>
+        <h2 class="section-title">Galería de Videos</h2>
+        <p class="section-desc">
+          Revive los mejores momentos del evento a través de estos registros audiovisuales.
+        </p>
+      </div>
+
+      <div class="videos-grid reveal">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe
+              src="baile.mp4"
+              title="Video del evento – Baile y Canto"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-info">
+            <i class="fas fa-play-circle"></i>
+            <div>
+              <h4>Presentaciones de Baile</h4>
+              <p>Los mejores momentos del baile.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe
+              src="canto_mp4.mp4"
+              title="Video del evento – Música"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-info">
+            <i class="fas fa-play-circle"></i>
+            <div>
+              <h4>Canto </h4>
+              <p>Voces que emocionaron al público.</p>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       APRENDIZAJES
+  ================================ -->
+  <section class="section aprendizajes" id="aprendizajes">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Reflexión Académica</span>
+        <h2 class="section-title">Aprendizajes del Evento</h2>
+        <p class="section-desc">
+          Más allá del talento artístico, la Batalla de Talentos dejó lecciones
+          de vida que enriquecen la formación integral de cada aprendiz.
+        </p>
+      </div>
+
+      <div class="apr-grid">
+        <div class="apr-card reveal">
+          <div class="apr-icon"><i class="fas fa-handshake-angle"></i></div>
+          <h3>Trabajo en Equipo</h3>
+          <p>
+            Coreografías y ensayos grupales fortalecieron la capacidad de colaborar,
+            escuchar y construir juntos hacia un objetivo común.
+          </p>
+        </div>
+        <div class="apr-card reveal">
+          <div class="apr-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Creatividad</h3>
+          <p>
+            Cada presentación fue una solución creativa única, impulsando el pensamiento
+            lateral y la innovación como competencias transversales.
+          </p>
+        </div>
+        <div class="apr-card reveal">
+          <div class="apr-icon"><i class="fas fa-crown"></i></div>
+          <h3>Liderazgo</h3>
+          <p>
+            Los líderes de cada grupo aprendieron a coordinar, motivar y guiar
+            a sus compañeros bajo presión y con responsabilidad.
+          </p>
+        </div>
+        <div class="apr-card reveal">
+          <div class="apr-icon"><i class="fas fa-comments"></i></div>
+          <h3>Comunicación</h3>
+          <p>
+            Pararse ante una audiencia y transmitir emociones desarrolló la comunicación
+            verbal, no verbal y escénica de cada participante.
+          </p>
+        </div>
+        <div class="apr-card reveal">
+          <div class="apr-icon"><i class="fas fa-theater-masks"></i></div>
+          <h3>Expresión Artística</h3>
+          <p>
+            El arte como lenguaje universal permitió a los aprendices comunicar ideas,
+            sentimientos e identidad cultural a través de diversas disciplinas.
+          </p>
+        </div>
+        <div class="apr-card reveal">
+          <div class="apr-icon"><i class="fas fa-brain"></i></div>
+          <h3>Habilidades Blandas</h3>
+          <p>
+            Resiliencia, empatía, gestión emocional y adaptabilidad fueron competencias
+            que se pusieron en práctica durante todo el evento.
+          </p>
+        </div>
+        <div class="apr-card reveal">
+          <div class="apr-icon"><i class="fas fa-flag"></i></div>
+          <h3>Participación Cultural</h3>
+          <p>
+            Valorar y difundir expresiones culturales propias fortalece la identidad
+            y el sentido de pertenencia a la comunidad SENA.
+          </p>
+        </div>
+        <div class="apr-card reveal">
+          <div class="apr-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Crecimiento Personal</h3>
+          <p>
+            Superar el miedo escénico, recibir retroalimentación y reconocer el talento
+            propio impulsan el desarrollo integral del aprendiz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CONCLUSIÓN
+  ================================ -->
+  <section class="section conclusion" id="conclusion">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Cierre</span>
+        <h2 class="section-title">Conclusión</h2>
+      </div>
+
+      <div class="conclusion-content reveal">
+        <div class="conclusion-text">
+          <p>
+            La <strong>Batalla de Talentos SENA 2026</strong> demostró que la excelencia
+            técnica y la expresión artística no son caminos separados. Cada presentación
+            fue un testimonio del potencial creativo que vive en los aprendices del SENA,
+            y de cómo los espacios culturales enriquecen la formación profesional.
+          </p>
+          <p>
+            Promover el talento artístico en contextos educativos no es un lujo: es una
+            necesidad. Las habilidades desarrolladas durante este evento —trabajo en equipo,
+            liderazgo, comunicación y resiliencia— son precisamente las competencias que
+            demanda el mundo laboral del siglo XXI.
+          </p>
+          <p>
+            Los beneficios de las actividades artísticas van más allá del escenario.
+            Mejoran la autoestima, potencian la concentración, fomentan la empatía y
+            generan vínculos comunitarios que fortalecen el ambiente de aprendizaje.
+          </p>
+          <p>
+            El impacto positivo de eventos como este en el SENA es claro: aprendices
+            más motivados, instructores inspirados y una comunidad institucional que
+            valora el desarrollo integral como eje de su misión formativa.
+          </p>
+          <p>
+            La creatividad no es una habilidad adicional: es el motor de la innovación.
+            Incorporarla en la formación profesional garantiza egresados capaces de
+            resolver problemas de maneras originales y de adaptarse a un mundo en
+            constante transformación.
+          </p>
+        </div>
+
+        <div class="conclusion-stats">
+          <div class="stat-item">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Categorías</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">17</span>
+            <span class="stat-label">Fotografías</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">8</span>
+            <span class="stat-label">Aprendizajes</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Talento</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+  ================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo footer-logo">
+            <i class="fas fa-star"></i>
+            <span>Batalla de Talentos</span>
+          </a>
+          <p>Evento cultural e institucional del SENA · Bogotá, Colombia · 2026</p>
+        </div>
+
+        <div class="footer-info">
+          <h4>Información del Estudiante</h4>
+          <ul>
+            <li><i class="fas fa-user"></i> Jesús Manuel Arrieta Suarez</li>
+            <li><i class="fas fa-graduation-cap"></i> Análisis y Desarrollo de Software</li>
+            <li><i class="fas fa-building"></i> Centro de Manufactura en Textil y Cuero</li>
+            <li><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</li>
+            <li><i class="fas fa-calendar"></i> 2026</li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Secciones</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">El Evento</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#aprendizajes">Aprendizajes</a></li>
+          </ul>
+        </div>
+
+          <p class="footer-sena">
+            <img src="https://placehold.co/120x40/FFFFFF/1A0533?text=SENA" alt="Logo SENA" width="120" height="40" />
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Batalla de Talentos SENA · Todos los derechos reservados.</p>
+        <p>Hecho en Colombia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón volver arriba -->
+  <button class="btn-top" id="btnTop" aria-label="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Script -->
+ <script src="script.js"></script>
+</body>
+</html>
